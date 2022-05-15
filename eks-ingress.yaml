@@ -6,12 +6,10 @@ metadata:
     nginx.ingress.kubernetes.io/configuration-snippet: |
       rewrite ^(/dashboard)$ $1/ redirect;
     nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
-    kubernetes.io/ingress.class: public
-  name: demo-ingress
-  namespace: default
-  annotations:
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
+  name: demo-ingress
+  namespace: default
   labels:
     app: demo-ingress
 spec:
