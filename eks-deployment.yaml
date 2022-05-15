@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: back-end
-          image: 777258879183.dkr.ecr.us-east-1.amazonaws.com/demo-repo:latest
+          image: 938057753719.dkr.ecr.us-east-1.amazonaws.com/gautam-eks:latest
           ports:
             - containerPort: 8080
